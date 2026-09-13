@@ -125,7 +125,7 @@ export default function MenuNav() {
                   </Link>
                 </li>
               </ul>
-              <div className="py-4">
+              <div className="py-4 w-full">
                 <a
                   href="#contato"
                   onClick={closeMenu}
