@@ -125,15 +125,15 @@ export default function MenuNav() {
                   </Link>
                 </li>
               </ul>
-              <div className="py-4 w-full">
+              
                 <a
                   href="#contato"
                   onClick={closeMenu}
-                  className="transition-all font-semibold  duration-300 w-full py-4 rounded-3xl text-[#000000] cursor-pointer hover:border-[#FFFFFF] hover:text-[#FFFFFF] bg-white"
+                  className="transition-all w-full text-center font-semibold  duration-300 py-4 rounded-3xl text-[#000000] cursor-pointer hover:border-[#FFFFFF] hover:text-[#FFFFFF] bg-white"
                 >
                   Agendamento
                 </a>
-              </div>
+              
             </motion.div>
           )}
         </AnimatePresence>
