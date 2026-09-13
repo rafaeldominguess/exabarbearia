@@ -2,13 +2,20 @@ import Container from "../Container/Container";
 
 export default function Servicos() {
   return (
-    <section className="w-full min-h-screen py-24">
+    <section
+      id="servicos"
+      aria-labelledby="servicos-heading"
+      className="w-full min-h-screen py-24"
+    >
       <Container>
         <div>
           <span className="text-[#FFFFFF]/70 text-sm font-bold uppercase tracking-widest">
             Nossos Serviços
           </span>
-          <h2 className="text-4xl md:text-6xl uppercase font-extrabold mt-4 mb-8 md:mt-10 md:mb-8 tracking-tighter">
+          <h2
+            id="servicos-heading"
+            className="text-4xl md:text-6xl uppercase font-extrabold mt-4 mb-8 md:mt-10 md:mb-8 tracking-tighter"
+          >
             O que oferecemos?
           </h2>
         </div>
@@ -42,7 +49,7 @@ export default function Servicos() {
           <div className="w-1/2 justify-center items-center hidden md:flex">
             <img
               src="/profissionaisherosection.png"
-              alt="Imagem dos serviços"
+              alt="Barbeiros da EXA preparando serviços de cabelo e barba"
               className=" object-cover w-1/2 rounded-2xl"
             />
           </div>

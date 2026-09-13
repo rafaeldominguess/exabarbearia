@@ -1,17 +1,10 @@
 import Container from "../Container/Container";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const navigationLinks = [
   { name: "Sobre", href: "#sobre" },
   { name: "Profissionais", href: "#profissionais" },
   { name: "Serviços", href: "#servicos" },
   { name: "Galeria", href: "#galeria" },
-];
-
-const socialLinks = [
-  { name: "Instagram", href: "https://instagram.com", icon: FaInstagram },
-  { name: "Facebook", href: "https://facebook.com", icon: FaFacebookF },
-  { name: "WhatsApp", href: "https://wa.me/5511999999999", icon: FaWhatsapp },
 ];
 
 export default function Footer() {
@@ -27,28 +20,9 @@ export default function Footer() {
               Cabelo, barba e presença. Um espaço pensado para você sair da
               rotina e voltar para o mundo na sua melhor versão.
             </p>
-            <a
-              href="https://wa.me/5511999999999"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-8 rounded-md bg-white px-6 py-3 text-xs font-bold uppercase tracking-widest text-black transition-colors hover:bg-white/80"
-            >
-              Agendar horário
-            </a>
-            <div className="mt-8 flex items-center gap-5 text-white/60">
-              {socialLinks.map(({ name, href, icon: Icon }) => (
-                <a
-                  key={name}
-                  href={href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={name}
-                  className="transition-colors hover:text-white"
-                >
-                  <Icon className="text-lg" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
+            <button className="w-full max-w-100 text-center cursor-pointer mt-8 rounded-md bg-white px-6 py-3 text-xs font-bold uppercase tracking-widest text-black transition-colors hover:bg-white/80">
+              Agendamento
+            </button>
           </div>
 
           <div>
@@ -69,37 +43,30 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div id="contato">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <h2 className="text-xs font-bold uppercase tracking-widest text-white/50">
                   Contato
                 </h2>
                 <p className="mt-2 text-sm font-semibold leading-relaxed text-white/80 mb-4">
-                  (55) 9 9999-9999
+                  Atendimento em Santa Maria - RS
                 </p>
                 <h2 className="text-xs font-bold uppercase tracking-widest text-white/50">
                   Visite a EXA
                 </h2>
                 <p className="mt-3 text-sm font-semibold leading-relaxed text-white/80">
-                  Av. Paulista, 1000
-                  <br />
-                  Bela Vista, São Paulo - SP
+                  Endereço e WhatsApp serão publicados em breve.
                 </p>
               </div>
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=Av.+Paulista,+1000,+S%C3%A3o+Paulo"
-                target="_blank"
-                rel="noreferrer"
-                className="text-xs font-bold uppercase tracking-widest text-white/60 transition-colors hover:text-white"
-              >
-                Abrir no mapa
-              </a>
+              <span className="text-xs font-bold uppercase tracking-widest text-white/60 transition-colors hover:text-white">
+                Localização em breve
+              </span>
             </div>
             <div className="mt-6 h-56 overflow-hidden rounded-lg border border-white/10 bg-white/5">
               <iframe
                 title="Localização da EXA Barbearia"
-                src="https://www.google.com/maps?q=Av.+Paulista,+1000,+S%C3%A3o+Paulo&output=embed"
+                src="https://www.google.com/maps?q=Santa+Maria,+RS&output=embed"
                 className="h-full w-full border-0 grayscale"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -118,15 +85,6 @@ export default function Footer() {
           </a>
         </div>
       </Container>
-      <a
-        href="https://wa.me/5511999999999"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Falar com a EXA pelo WhatsApp"
-        className="fixed bottom-4 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-white text-xl text-black shadow-[0_8px_24px_rgba(0,0,0,0.3)] transition-transform hover:scale-105 md:hidden"
-      >
-        <FaWhatsapp aria-hidden="true" />
-      </a>
     </footer>
   );
 }

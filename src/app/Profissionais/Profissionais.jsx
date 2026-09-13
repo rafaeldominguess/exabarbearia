@@ -1,6 +1,5 @@
 import Container from "../Container/Container";
 
-
 export default function Profissionais() {
   const profissional = [
     {
@@ -27,13 +26,20 @@ export default function Profissionais() {
   ];
 
   return (
-    <section className="w-full min-h-screen py-24">
+    <section
+      id="profissionais"
+      aria-labelledby="profissionais-heading"
+      className="w-full min-h-screen py-24"
+    >
       <Container>
         <div>
           <span className="text-[#FFFFFF]/70 text-sm font-bold uppercase tracking-widest">
             Nossos Profissionais
           </span>
-          <h2 className="text-4xl md:text-6xl uppercase font-extrabold mt-4 mb-8 md:mt-10 md:mb-8 tracking-tighter max-w-170">
+          <h2
+            id="profissionais-heading"
+            className="text-4xl md:text-6xl uppercase font-extrabold mt-4 mb-8 md:mt-10 md:mb-8 tracking-tighter max-w-170"
+          >
             Com quem você quer cortar ?
           </h2>
         </div>
@@ -64,14 +70,14 @@ export default function Profissionais() {
                   <div className="max-w-150 w-full  rounded-lg overflow-hidden">
                     <img
                       src={`/profissional${profissional.id}.png`}
-                      alt={profissional.nome}
+                      alt={`Barbeiro ${profissional.nome} da EXA Barbearia`}
                       className="w-full h-60 object-top object-cover hover:scale-105 transition-all duration-300"
                     />
                   </div>
                   <div className="w-full flex justify-end items-center">
-                  <button className="cursor-pointer bg-[#FFFFFF] text-[#000000] py-2 px-4 rounded-lg hover:border-[#FFFFFF]/20 border hover:bg-transparent hover:text-[#FFFFFF] text-sm font-semibold mt-6 mb-2 transition-all duration-400">
-                    Agendar horário
-                  </button>
+                    <button className="cursor-pointer bg-[#FFFFFF] text-[#000000] py-2 px-4 rounded-lg hover:border-[#FFFFFF]/20 border hover:bg-transparent hover:text-[#FFFFFF] text-sm font-semibold mt-6 mb-2 transition-all duration-400">
+                      Agendar horário
+                    </button>
                   </div>
                 </div>
               ))}

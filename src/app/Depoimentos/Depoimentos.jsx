@@ -125,6 +125,7 @@ function TestimonialsColumn({
 export default function Depoimentos() {
   return (
     <section
+      id="depoimentos"
       className="relative w-full overflow-hidden py-24"
       aria-labelledby="depoimentos-heading"
     >

@@ -29,30 +29,33 @@ export default function MenuNav() {
           <div className="items-center text-sm gap-8 font-semibold text-[#FFFFFF]/70 hidden md:flex tracking-wider">
             <ul className="flex gap-8">
               <li className="hover:text-[#FFFFFF]">
-                <Link href="#">Home</Link>
+                <Link href="#inicio">Home</Link>
               </li>
               <li className="hover:text-[#FFFFFF]">
-                <Link href="#">Sobre</Link>
+                <Link href="#sobre">Sobre</Link>
               </li>
               <li className="hover:text-[#FFFFFF]">
-                <Link href="#">Profissionais</Link>
+                <Link href="#profissionais">Profissionais</Link>
               </li>
               <li className="hover:text-[#FFFFFF]">
-                <Link href="#">Serviços</Link>
+                <Link href="#servicos">Serviços</Link>
               </li>
               <li className="hover:text-[#FFFFFF]">
-                <Link href="#">Galeria</Link>
+                <Link href="#galeria">Galeria</Link>
               </li>
               <li className="hover:text-[#FFFFFF]">
-                <Link href="#">Depoimentos</Link>
+                <Link href="#depoimentos">Depoimentos</Link>
               </li>
               <li className="hover:text-[#FFFFFF]">
-                <Link href="#">Contato</Link>
+                <Link href="#contato">Contato</Link>
               </li>
             </ul>
-            <button className="px-6 py-2 rounded-3xl border border-[#FFFFFF]/20 cursor-pointer hover:text-[#000302] hover:bg-[#FFFFFF] transition-all duration-400">
+            <a
+              href="#contato"
+              className="px-6 py-2 rounded-3xl border border-[#FFFFFF]/20 cursor-pointer hover:text-[#000302] hover:bg-[#FFFFFF] transition-all duration-400"
+            >
               Agendamento
-            </button>
+            </a>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -87,48 +90,49 @@ export default function MenuNav() {
             >
               <ul className="flex flex-col gap-4 text-right">
                 <li className="hover:text-[#FFFFFF]">
-                  <Link href="#" onClick={closeMenu}>
+                  <Link href="#inicio" onClick={closeMenu}>
                     Home
                   </Link>
                 </li>
                 <li className="hover:text-[#FFFFFF]">
-                  <Link href="#" onClick={closeMenu}>
+                  <Link href="#sobre" onClick={closeMenu}>
                     Sobre
                   </Link>
                 </li>
                 <li className="hover:text-[#FFFFFF]">
-                  <Link href="#" onClick={closeMenu}>
+                  <Link href="#profissionais" onClick={closeMenu}>
                     Profissionais
                   </Link>
                 </li>
                 <li className="hover:text-[#FFFFFF]">
-                  <Link href="#" onClick={closeMenu}>
+                  <Link href="#servicos" onClick={closeMenu}>
                     Serviços
                   </Link>
                 </li>
                 <li className="hover:text-[#FFFFFF]">
-                  <Link href="#" onClick={closeMenu}>
+                  <Link href="#galeria" onClick={closeMenu}>
                     Galeria
                   </Link>
                 </li>
                 <li className="hover:text-[#FFFFFF]">
-                  <Link href="#" onClick={closeMenu}>
+                  <Link href="#depoimentos" onClick={closeMenu}>
                     Depoimentos
                   </Link>
                 </li>
                 <li className="hover:text-[#FFFFFF]">
-                  <Link href="#" onClick={closeMenu}>
+                  <Link href="#contato" onClick={closeMenu}>
                     Contato
                   </Link>
                 </li>
               </ul>
               <div className="py-4">
-                <button
+                <a
+                  href="#contato"
                   onClick={closeMenu}
                   className="transition-all font-semibold  duration-300 w-full py-4 rounded-3xl text-[#000000] cursor-pointer hover:border-[#FFFFFF] hover:text-[#FFFFFF] bg-white"
                 >
                   Agendamento
-                </button>
+                </a>
               </div>
             </motion.div>
           )}

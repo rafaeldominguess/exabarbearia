@@ -3,10 +3,14 @@ import Container from "../Container/Container";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen text-[#FFFFFF] py-10">
+    <section
+      id="inicio"
+      aria-labelledby="hero-heading"
+      className="relative min-h-screen text-[#FFFFFF] py-10"
+    >
       <Image
         src="/hero.png"
-        alt="Hero Background"
+        alt="Ambiente da EXA Barbearia em Santa Maria"
         fill
         priority
         className="object-cover opacity-50 -z-10"
@@ -17,9 +21,12 @@ export default function HeroSection() {
             <span className="text-[#FFFFFF]/70 text-sm font-semibold tracking-widest">
               Bem-vindo à nossa barbearia
             </span>
-            <h1 className="text-4xl md:text-6xl uppercase font-extrabold mt-4 mb-8 md:mt-6 md:mb-8 tracking-tighter">
-              Muito mais que <br />
-              um Corte
+            <h1
+              id="hero-heading"
+              className="text-4xl md:text-6xl uppercase font-extrabold mt-4 mb-8 md:mt-6 md:mb-8 tracking-tighter"
+            >
+              
+              muito mais que um corte
             </h1>
             <p className="text-[#FFFFFF]/90 text-sm md:text-base font-semibold mb-14 leading-relaxed md:leading-loose tracking-wider">
               Descubra a diferença que um excelente corte pode fazer na sua
@@ -28,12 +35,18 @@ export default function HeroSection() {
             </p>
           </div>
           <div className="flex gap-4 font-semibold flex-col md:flex-row w-full">
-            <button className="bg-white px-8 py-4 md:py-3 rounded-md cursor-pointer hover:bg-[#FFFFFF]/70 hover:text-[#000000] text-[#000000] text-sm  font-bold uppercase tracking-widest transition-all duration-400">
+            <a
+              href="#contato"
+              className="bg-white px-8 py-4 md:py-3 text-center rounded-md cursor-pointer hover:bg-[#FFFFFF]/70 hover:text-[#000000] text-[#000000] text-sm font-bold uppercase tracking-widest transition-all duration-400"
+            >
               Agendar horário
-            </button>
-            <button className="px-8 py-4 md:py-3 rounded-md border border-white/20 hover:border-white/50 cursor-pointer text-[#FFFFFF]/70 hover:text-[#FFFFFF] text-sm  font-medium uppercase tracking-widest transition-all duration-400">
+            </a>
+            <a
+              href="#servicos"
+              className="text-center px-8 py-4 md:py-3 rounded-md border border-white/20 hover:border-white/50 cursor-pointer text-[#FFFFFF]/70 hover:text-[#FFFFFF] text-sm font-medium uppercase tracking-widest transition-all duration-400"
+            >
               Nossos serviços
-            </button>
+            </a>
           </div>
         </div>
       </Container>

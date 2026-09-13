@@ -14,13 +14,20 @@ const barbershopCards = [
 
 export default function Galeria() {
   return (
-    <section className="w-full min-h-screen py-24">
+    <section
+      id="galeria"
+      aria-labelledby="galeria-heading"
+      className="w-full min-h-screen py-24"
+    >
       <Container>
         <div className="flex max-w-170 flex-col">
           <span className="text-[#FFFFFF]/70 text-sm font-bold uppercase tracking-widest">
             NOSSO ESPAÇO & RESULTADOS
           </span>
-          <h2 className="text-4xl md:text-6xl uppercase font-extrabold mt-4 mb-8 md:mt-10 md:mb-8 tracking-tighter">
+          <h2
+            id="galeria-heading"
+            className="text-4xl md:text-6xl uppercase font-extrabold mt-4 mb-8 md:mt-10 md:mb-8 tracking-tighter"
+          >
             A EXPERIÊNCIA VISTA DE PERTO
           </h2>
           <p className="text-[#FFFFFF]/90 text-sm font-medium tracking-wider w-full">

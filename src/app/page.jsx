@@ -9,7 +9,7 @@ import Footer from "./Footer/Footer";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <MenuNav />
       <HeroSection />
       <About />
@@ -18,6 +18,6 @@ export default function Home() {
       <Galeria />
       <Depoimentos />
       <Footer />
-    </>
+    </main>
   );
 }
